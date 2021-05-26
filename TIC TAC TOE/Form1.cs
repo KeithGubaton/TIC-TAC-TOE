@@ -21,11 +21,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-               object a = box1.Text = "X";
+               box1.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-               object a = box1.Text = "O";
+               box1.Text = "O";
             }
         }
 
@@ -33,11 +33,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                object b = box2.Text = "X";
+                box2.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                object b = box2.Text = "O";
+                box2.Text = "O";
             }
         }
 
@@ -45,23 +45,25 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                object c = box3.Text = "X";
+                box3.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                object c = box3.Text = "O";
+                box3.Text = "O";
             }
+
+            hindi_ligwak();
         }
 
         private void box4_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
-                object d = box4.Text = "X";
+                box4.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                object d = box4.Text = "O";
+                box4.Text = "O";
             }
         }
 
@@ -69,11 +71,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                object r = box5.Text = "X";
+                box5.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                object r = box5.Text = "O";
+                box5.Text = "O";
             }
         }
 
@@ -81,23 +83,25 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                object f = box6.Text = "X";
+                box6.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                object f = box6.Text = "O";
+                box6.Text = "O";
             }
+
+            hindi_ligwak();
         }
 
         private void box7_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
-                object g = box7.Text = "X";
+                box7.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                object g = box7.Text = "O";
+                box7.Text = "O";
             }
         }
 
@@ -105,11 +109,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-               object h = box8.Text = "X";
+               box8.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-               object h = box8.Text = "O";
+               box8.Text = "O";
             }
         }
 
@@ -117,21 +121,80 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-               object i = box9.Text = "X";
+               box9.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-               object i = box9.Text = "O";
+               box9.Text = "O";
             }
+
+            hindi_ligwak();
         }
 
-        //paano ako gagawa ng case by case huhuhuhuhu
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
 
-        
-        //private void panalo()
-            //horizontal
+        private void ResetBtn_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
+
+
+        private void hindi_ligwak()
+        {
+            bool hindi_ligwak = false;
+
+
+            //diagonal 
+
+            if ((box1.Text == box5.Text) && (box5.Text == box9.Text))
+                hindi_ligwak = true;
+            if ((box3.Text == box5.Text) && (box5.Text == box7.Text))
+                hindi_ligwak = true;
+
+            if (hindi_ligwak)
+                MessageBox.Show("Yehey!");
+           
+
+            //vertical
+
+            if ((box1.Text == box4.Text) && (box4.Text == box7.Text))
+                hindi_ligwak = true;
+            if ((box2.Text == box5.Text) && (box5.Text == box8.Text))
+                hindi_ligwak = true;
+            if ((box3.Text == box6.Text) && (box6.Text == box9.Text))
+                hindi_ligwak = true;
+
+            if (hindi_ligwak)
+                MessageBox.Show("Yehey!");
             
 
-        
+            //horizontal
+            if ((box1.Text == box2.Text) && (box2.Text == box3.Text))
+                hindi_ligwak = true;
+            if ((box4.Text == box5.Text) && (box5.Text == box6.Text))
+                hindi_ligwak = true;
+            if ((box7.Text == box8.Text) && (box8.Text == box9.Text))
+                hindi_ligwak = true;
+
+            if (hindi_ligwak)
+                MessageBox.Show("Yehey!");
+            
+        }
+        //paano ako gagawa ng case by case huhuhuhuhu
+
+
+        //private void panalo()
+        //horizontal
+
+        //
+
+
+
     }
+
+        
+    
 }

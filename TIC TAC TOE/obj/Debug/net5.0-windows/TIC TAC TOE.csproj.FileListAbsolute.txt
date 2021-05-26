@@ -16,3 +16,4 @@ C:\Users\Angeline\source\repos\TIC TAC TOE\TIC TAC TOE\obj\Debug\net5.0-windows\
 C:\Users\Angeline\source\repos\TIC TAC TOE\TIC TAC TOE\obj\Debug\net5.0-windows\ref\TIC TAC TOE.dll
 C:\Users\Angeline\source\repos\TIC TAC TOE\TIC TAC TOE\obj\Debug\net5.0-windows\TIC TAC TOE.pdb
 C:\Users\Angeline\source\repos\TIC TAC TOE\TIC TAC TOE\obj\Debug\net5.0-windows\TIC TAC TOE.genruntimeconfig.cache
+C:\Users\Angeline\source\repos\TIC TAC TOE\TIC TAC TOE\obj\Debug\net5.0-windows\TIC_TAC_TOE.Properties.Resources.resources

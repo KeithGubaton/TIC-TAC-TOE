@@ -21,11 +21,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box1.Text = "X";
+               object a = box1.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box1.Text = "O";
+               object a = box1.Text = "O";
             }
         }
 
@@ -33,11 +33,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box2.Text = "X";
+                object b = box2.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box2.Text = "O";
+                object b = box2.Text = "O";
             }
         }
 
@@ -45,11 +45,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box3.Text = "X";
+                object c = box3.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box3.Text = "O";
+                object c = box3.Text = "O";
             }
         }
 
@@ -57,11 +57,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box4.Text = "X";
+                object d = box4.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box4.Text = "O";
+                object d = box4.Text = "O";
             }
         }
 
@@ -69,11 +69,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box5.Text = "X";
+                object r = box5.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box5.Text = "O";
+                object r = box5.Text = "O";
             }
         }
 
@@ -81,11 +81,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box6.Text = "X";
+                object f = box6.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box6.Text = "O";
+                object f = box6.Text = "O";
             }
         }
 
@@ -93,11 +93,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box7.Text = "X";
+                object g = box7.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box7.Text = "O";
+                object g = box7.Text = "O";
             }
         }
 
@@ -105,11 +105,11 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box8.Text = "X";
+               object h = box8.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box8.Text = "O";
+               object h = box8.Text = "O";
             }
         }
 
@@ -117,12 +117,21 @@ namespace TIC_TAC_TOE
         {
             if (e.Button == MouseButtons.Left)
             {
-                box9.Text = "X";
+               object i = box9.Text = "X";
             }
             if (e.Button == MouseButtons.Right)
             {
-                box9.Text = "O";
+               object i = box9.Text = "O";
             }
         }
+
+        //paano ako gagawa ng case by case huhuhuhuhu
+
+        
+        //private void panalo()
+            //horizontal
+            
+
+        
     }
 }

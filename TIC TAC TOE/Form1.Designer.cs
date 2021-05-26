@@ -126,7 +126,7 @@ namespace TIC_TAC_TOE
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(341, 430);
+            this.ClientSize = new System.Drawing.Size(346, 432);
             this.Controls.Add(this.box9);
             this.Controls.Add(this.box8);
             this.Controls.Add(this.box7);

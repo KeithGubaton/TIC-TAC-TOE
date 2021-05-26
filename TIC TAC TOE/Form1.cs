@@ -27,6 +27,7 @@ namespace TIC_TAC_TOE
             {
                box1.Text = "O";
             }
+            box1.Enabled = false;
         }
 
         private void box2_MouseUp(object sender, MouseEventArgs e)
@@ -39,6 +40,7 @@ namespace TIC_TAC_TOE
             {
                 box2.Text = "O";
             }
+            box2.Enabled = false;
         }
 
         private void box3_MouseUp(object sender, MouseEventArgs e)
@@ -51,6 +53,7 @@ namespace TIC_TAC_TOE
             {
                 box3.Text = "O";
             }
+            box3.Enabled = false;
 
             hindi_ligwak();
         }
@@ -65,6 +68,7 @@ namespace TIC_TAC_TOE
             {
                 box4.Text = "O";
             }
+            box4.Enabled = false;
         }
 
         private void box5_MouseUp(object sender, MouseEventArgs e)
@@ -77,6 +81,7 @@ namespace TIC_TAC_TOE
             {
                 box5.Text = "O";
             }
+            box5.Enabled = false;
         }
 
         private void box6_MouseUp(object sender, MouseEventArgs e)
@@ -89,6 +94,7 @@ namespace TIC_TAC_TOE
             {
                 box6.Text = "O";
             }
+            box6.Enabled = false;
 
             hindi_ligwak();
         }
@@ -103,6 +109,7 @@ namespace TIC_TAC_TOE
             {
                 box7.Text = "O";
             }
+            box7.Enabled = false;
         }
 
         private void box8_MouseUp(object sender, MouseEventArgs e)
@@ -115,6 +122,7 @@ namespace TIC_TAC_TOE
             {
                box8.Text = "O";
             }
+            box8.Enabled = false;
         }
 
         private void box9_MouseUp(object sender, MouseEventArgs e)
@@ -127,7 +135,7 @@ namespace TIC_TAC_TOE
             {
                box9.Text = "O";
             }
-
+            box9.Enabled = false;
             hindi_ligwak();
         }
 
@@ -144,6 +152,7 @@ namespace TIC_TAC_TOE
 
         private void hindi_ligwak()
         {
+            // MALI TO HUHU
             bool hindi_ligwak = false;
 
 

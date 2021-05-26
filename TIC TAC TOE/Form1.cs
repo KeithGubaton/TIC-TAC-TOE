@@ -17,6 +17,7 @@ namespace TIC_TAC_TOE
             InitializeComponent();
         }
 
+
         private void box1_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -55,7 +56,7 @@ namespace TIC_TAC_TOE
             }
             box3.Enabled = false;
 
-            hindi_ligwak();
+            //hindi_ligwak();
         }
 
         private void box4_MouseUp(object sender, MouseEventArgs e)
@@ -96,7 +97,7 @@ namespace TIC_TAC_TOE
             }
             box6.Enabled = false;
 
-            hindi_ligwak();
+            //hindi_ligwak();
         }
 
         private void box7_MouseUp(object sender, MouseEventArgs e)
@@ -136,7 +137,7 @@ namespace TIC_TAC_TOE
                box9.Text = "O";
             }
             box9.Enabled = false;
-            hindi_ligwak();
+            //hindi_ligwak();
         }
 
         private void ExitBtn_Click(object sender, EventArgs e)
@@ -150,46 +151,46 @@ namespace TIC_TAC_TOE
         }
 
 
-        private void hindi_ligwak()
-        {
+        //private void hindi_ligwak()
+        //{
             // MALI TO HUHU
-            bool hindi_ligwak = false;
+           // bool hindi_ligwak = false;
 
 
             //diagonal 
 
-            if ((box1.Text == box5.Text) && (box5.Text == box9.Text))
-                hindi_ligwak = true;
-            if ((box3.Text == box5.Text) && (box5.Text == box7.Text))
-                hindi_ligwak = true;
+            //if ((box1.Text == box5.Text) && (box5.Text == box9.Text))
+            //    hindi_ligwak = true;
+            //if ((box3.Text == box5.Text) && (box5.Text == box7.Text))
+            //   hindi_ligwak = true;
 
-            if (hindi_ligwak)
-                MessageBox.Show("Yehey!");
+            //if (hindi_ligwak)
+            //    MessageBox.Show("Yehey!");
            
 
             //vertical
 
-            if ((box1.Text == box4.Text) && (box4.Text == box7.Text))
-                hindi_ligwak = true;
-            if ((box2.Text == box5.Text) && (box5.Text == box8.Text))
-                hindi_ligwak = true;
-            if ((box3.Text == box6.Text) && (box6.Text == box9.Text))
-                hindi_ligwak = true;
+            //if ((box1.Text == box4.Text) && (box4.Text == box7.Text))
+            //    hindi_ligwak = true;
+            //if ((box2.Text == box5.Text) && (box5.Text == box8.Text))
+            //    hindi_ligwak = true;
+            //if ((box3.Text == box6.Text) && (box6.Text == box9.Text))
+            //   hindi_ligwak = true;
 
-            if (hindi_ligwak)
-                MessageBox.Show("Yehey!");
+            //if (hindi_ligwak)
+            //    MessageBox.Show("Yehey!");
             
 
             //horizontal
-            if ((box1.Text == box2.Text) && (box2.Text == box3.Text))
-                hindi_ligwak = true;
-            if ((box4.Text == box5.Text) && (box5.Text == box6.Text))
-                hindi_ligwak = true;
-            if ((box7.Text == box8.Text) && (box8.Text == box9.Text))
-                hindi_ligwak = true;
+            //if ((box1.Text == box2.Text) && (box2.Text == box3.Text))
+            //    hindi_ligwak = true;
+            //if ((box4.Text == box5.Text) && (box5.Text == box6.Text))
+            //    hindi_ligwak = true;
+            //if ((box7.Text == box8.Text) && (box8.Text == box9.Text))
+            //    hindi_ligwak = true;
 
-            if (hindi_ligwak)
-                MessageBox.Show("Yehey!");
+            //if (hindi_ligwak)
+            //   MessageBox.Show("Yehey!");
             
         }
         //paano ako gagawa ng case by case huhuhuhuhu
@@ -202,7 +203,7 @@ namespace TIC_TAC_TOE
 
 
 
-    }
+    //}
 
         
     

@@ -12,36 +12,58 @@ namespace TIC_TAC_TOE
 {
     public partial class Form1 : Form
     {
+        //bool hatdog = true;
+        //int hatdog_c = 0;
+
         public Form1()
         {
             InitializeComponent();
+            
+            
         }
-
-
+        //gusto ko gumawa ng button or function na makakapag-disable ng button 
+        // once na maclick siya kelangan right button muna bago mag left ulit
+        
         private void box1_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
-               box1.Text = "X";
+                box1.Text = "X";
+                if ((box1.Text == "X"))
+                {
+                    box1.Enabled = false;
+                }
             }
             if (e.Button == MouseButtons.Right)
             {
-               box1.Text = "O";
+                box1.Text = "O";
+                if ((box1.Text == "O"))
+                {
+                    box1.Enabled = false;
+                }
             }
-            box1.Enabled = false;
+            
         }
-
+      
         private void box2_MouseUp(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
                 box2.Text = "X";
+                if ((box2.Text == "X"))
+                {
+                    box2.Enabled = false;
+                }
             }
             if (e.Button == MouseButtons.Right)
             {
                 box2.Text = "O";
+                if ((box2.Text == "O"))
+                {
+                    box2.Enabled = false;
+                }
             }
-            box2.Enabled = false;
+            
         }
 
         private void box3_MouseUp(object sender, MouseEventArgs e)
@@ -150,6 +172,7 @@ namespace TIC_TAC_TOE
             Application.Restart();
         }
 
+       
 
         //private void hindi_ligwak()
         //{

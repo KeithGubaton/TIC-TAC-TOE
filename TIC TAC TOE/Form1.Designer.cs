@@ -136,36 +136,34 @@ namespace TIC_TAC_TOE
             // 
             // ResetBtn
             // 
+            this.ResetBtn.AutoCheck = false;
             this.ResetBtn.AutoSize = true;
             this.ResetBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ResetBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ResetBtn.Location = new System.Drawing.Point(16, 369);
+            this.ResetBtn.Location = new System.Drawing.Point(16, 360);
             this.ResetBtn.Name = "ResetBtn";
             this.ResetBtn.Size = new System.Drawing.Size(53, 19);
-            this.ResetBtn.TabIndex = 11;
-            this.ResetBtn.TabStop = true;
+            this.ResetBtn.TabIndex = 16;
             this.ResetBtn.Text = "Reset";
             this.ResetBtn.UseVisualStyleBackColor = false;
             this.ResetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
             // ExitBtn
             // 
+            this.ExitBtn.AutoCheck = false;
             this.ExitBtn.AutoSize = true;
-            this.ExitBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ExitBtn.Location = new System.Drawing.Point(292, 369);
+            this.ExitBtn.Location = new System.Drawing.Point(292, 360);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(44, 19);
-            this.ExitBtn.TabIndex = 12;
-            this.ExitBtn.TabStop = true;
+            this.ExitBtn.TabIndex = 17;
             this.ExitBtn.Text = "Exit";
-            this.ExitBtn.UseVisualStyleBackColor = false;
+            this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(349, 415);
             this.Controls.Add(this.ExitBtn);
@@ -180,7 +178,8 @@ namespace TIC_TAC_TOE
             this.Controls.Add(this.box2);
             this.Controls.Add(this.box1);
             this.Name = "Form1";
-            this.Text = "TIC TAC TOE";
+            this.ShowIcon = false;
+            this.Text = "Reset";
             this.ResumeLayout(false);
             this.PerformLayout();
 

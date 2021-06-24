@@ -24,15 +24,8 @@ namespace TIC_TAC_TOE
         //gusto ko gumawa ng button or function na makakapag-disable ng button 
         //once na maclick siya kelangan right button muna bago mag left ulit
         //button click nalang huh
-        
 
-        private void ExitBtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
 
-        }
-
-      
         private void box_Click(object sender, EventArgs e)
         {
             Button box = (Button)sender;
@@ -44,37 +37,22 @@ namespace TIC_TAC_TOE
             next = !next;
             box.Enabled = false;
             next_c++;
+
             hindi_ligwak();
         }
-
-
-
-
 
         private void hindi_ligwak()
         {
         // MALI TO HUHU
          bool hindi_ligwak = false;
 
+            //vertical
 
-
-        //vertical
-
-        if ((box1.Text == box4.Text) && (box4.Text == box7.Text) && (!box1.Enabled))
-            hindi_ligwak = true;
-        if ((box2.Text == box5.Text) && (box5.Text == box8.Text) && (!box2.Enabled))
-            hindi_ligwak = true;
-        if ((box3.Text == box6.Text) && (box6.Text == box9.Text) && (!box3.Enabled))
-            hindi_ligwak = true;
-
-         //if (hindi_ligwak)
-            //  MessageBox.Show("Yehey!");
-
-            //diagonal 
-
-            if ((box1.Text == box5.Text) && (box5.Text == box9.Text) && (!box1.Enabled))
+            if ((box1.Text == box4.Text) && (box4.Text == box7.Text) && (!box1.Enabled))
                 hindi_ligwak = true;
-            if ((box3.Text == box5.Text) && (box5.Text == box7.Text) && (!box7.Enabled))
+            else if ((box2.Text == box5.Text) && (box5.Text == box8.Text) && (!box2.Enabled))
+                hindi_ligwak = true;
+            else if ((box3.Text == box6.Text) && (box6.Text == box9.Text) && (!box3.Enabled))
                 hindi_ligwak = true;
 
             //if (hindi_ligwak)
@@ -82,38 +60,40 @@ namespace TIC_TAC_TOE
 
 
             //horizontal
-            if ((box1.Text == box2.Text) && (box2.Text == box3.Text) && (!box1.Enabled))
-            hindi_ligwak = true;
-        if ((box4.Text == box5.Text) && (box5.Text == box6.Text) && (!box4.Enabled))
-            hindi_ligwak = true;
-        if ((box7.Text == box8.Text) && (box8.Text == box9.Text) && (!box7.Enabled))
-            hindi_ligwak = true;
+            else if ((box1.Text == box2.Text) && (box2.Text == box3.Text) && (!box1.Enabled))
+                hindi_ligwak = true;
+            else if ((box4.Text == box5.Text) && (box5.Text == box6.Text) && (!box4.Enabled))
+                hindi_ligwak = true;
+            else if ((box7.Text == box8.Text) && (box8.Text == box9.Text) && (!box7.Enabled))
+                hindi_ligwak = true;
 
-        //if (hindi_ligwak)
-              //  MessageBox.Show("Yehey!");
+            //diagonal
 
-
-
+            else if ((box1.Text == box5.Text) && (box5.Text == box9.Text) && (!box1.Enabled))
+                hindi_ligwak = true;
+            else if ((box3.Text == box5.Text) && (box5.Text == box7.Text) && (!box7.Enabled))
+                hindi_ligwak = true;
+            
             if (hindi_ligwak)
             {
                 disableBox();
 
-                string panalo = "";
+                String panalo = "";
                 if (next)
                     panalo = "O";
                 else
                     panalo = "X";
 
                 MessageBox.Show(panalo + " ang panalo!");
-            }
-          //  else
+            }//tapos
+            else
             {
-                if(next_c == 9)
+                if (next_c == 9)
                     MessageBox.Show("Tabla");
             }
 
-       
-    }
+        }//katapusan na ng mundo
+
         private void disableBox()
         {   
             try
@@ -126,13 +106,17 @@ namespace TIC_TAC_TOE
             }
             catch { }
         }
+
         private void ResetBtn_Click(object sender, EventArgs e)
         {
             Application.Restart();
         }
 
+        private void ExitBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
 
-
+        }
     }
 
         

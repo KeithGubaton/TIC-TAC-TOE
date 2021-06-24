@@ -93,8 +93,8 @@ namespace TIC_TAC_TOE
         if ((box3.Text == box5.Text) && (box5.Text == box7.Text) && (!box7.Enabled))
             hindi_ligwak = true;
 
-        if (hindi_ligwak)
-            MessageBox.Show("Yehey!");
+        //if (hindi_ligwak)
+          //  MessageBox.Show("Yehey!");
 
 
         //vertical
@@ -106,8 +106,8 @@ namespace TIC_TAC_TOE
         if ((box3.Text == box6.Text) && (box6.Text == box9.Text) && (!box3.Enabled))
             hindi_ligwak = true;
 
-        if (hindi_ligwak)
-            MessageBox.Show("Yehey!");
+        //if (hindi_ligwak)
+          //  MessageBox.Show("Yehey!");
 
 
         //horizontal
@@ -118,23 +118,23 @@ namespace TIC_TAC_TOE
         if ((box7.Text == box8.Text) && (box8.Text == box9.Text) && (!box7.Enabled))
             hindi_ligwak = true;
 
-        if (hindi_ligwak)
-                MessageBox.Show("Yehey!");
+        //if (hindi_ligwak)
+              //  MessageBox.Show("Yehey!");
 
 
 
             if (hindi_ligwak)
-            //{
-              //  disableBox();
+            {
+                disableBox();
 
-               // string panalo = "";
-              //  if (next)
-                //    panalo = "O";
-               // else
-             //       panalo = "X";
+                string panalo = "";
+                if (next)
+                    panalo = "O";
+                else
+                    panalo = "X";
 
-               // MessageBox.Show(panalo + " ang panalo!");
-          //  }
+                MessageBox.Show(panalo + " ang panalo!");
+            }
           //  else
             {
                 if(next_c == 9)
@@ -143,18 +143,18 @@ namespace TIC_TAC_TOE
 
        
     }
-       // private void disableBox()
-     //   {   
-       //     try
-        //    {
-        //        foreach (Control c in Controls)
-             //   {
-             //       Button box = (Button)c;
-               //     box.Enabled = false;
-              //  }
-        //    }
-         //   catch { }
-        //}
+        private void disableBox()
+        {   
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button box = (Button)c;
+                    box.Enabled = false;
+                }
+            }
+            catch { }
+        }
        
 
 

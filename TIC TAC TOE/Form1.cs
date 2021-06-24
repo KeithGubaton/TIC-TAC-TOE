@@ -30,38 +30,9 @@ namespace TIC_TAC_TOE
         {
             Application.Exit();
 
-            //next = true;
-            //next_c = 0;
-            //try
-            //{
-                //foreach (Control c in Controls)
-                //{
-                    //Button box = (Button)c;
-                  //  box.Enabled = false;
-                //    box.Text = "";
-              //  }
-            //}
-            //catch { }
         }
 
-        private void ResetBtn_Click(object sender, EventArgs e)
-        {
-            Application.Restart();
-
-          //  next = true;
-          //  next_c = 0;
-          //  try
-           // {
-            //    foreach (Control c in Controls)
-             //   {
-              //      Button box = (Button)c;
-               //     box.Enabled = false;
-                 //   box.Text = "";
-              //  }
-            //}
-            //catch { }
-        }
-
+      
         private void box_Click(object sender, EventArgs e)
         {
             Button box = (Button)sender;
@@ -86,16 +57,6 @@ namespace TIC_TAC_TOE
          bool hindi_ligwak = false;
 
 
-        //diagonal 
-
-        if ((box1.Text == box5.Text) && (box5.Text == box9.Text) && (!box1.Enabled))
-            hindi_ligwak = true;
-        if ((box3.Text == box5.Text) && (box5.Text == box7.Text) && (!box7.Enabled))
-            hindi_ligwak = true;
-
-        //if (hindi_ligwak)
-          //  MessageBox.Show("Yehey!");
-
 
         //vertical
 
@@ -106,12 +67,22 @@ namespace TIC_TAC_TOE
         if ((box3.Text == box6.Text) && (box6.Text == box9.Text) && (!box3.Enabled))
             hindi_ligwak = true;
 
-        //if (hindi_ligwak)
-          //  MessageBox.Show("Yehey!");
+         //if (hindi_ligwak)
+            //  MessageBox.Show("Yehey!");
+
+            //diagonal 
+
+            if ((box1.Text == box5.Text) && (box5.Text == box9.Text) && (!box1.Enabled))
+                hindi_ligwak = true;
+            if ((box3.Text == box5.Text) && (box5.Text == box7.Text) && (!box7.Enabled))
+                hindi_ligwak = true;
+
+            //if (hindi_ligwak)
+            //  MessageBox.Show("Yehey!");
 
 
-        //horizontal
-        if ((box1.Text == box2.Text) && (box2.Text == box3.Text) && (!box1.Enabled))
+            //horizontal
+            if ((box1.Text == box2.Text) && (box2.Text == box3.Text) && (!box1.Enabled))
             hindi_ligwak = true;
         if ((box4.Text == box5.Text) && (box5.Text == box6.Text) && (!box4.Enabled))
             hindi_ligwak = true;
@@ -155,7 +126,10 @@ namespace TIC_TAC_TOE
             }
             catch { }
         }
-       
+        private void ResetBtn_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
 
 
 

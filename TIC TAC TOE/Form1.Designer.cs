@@ -39,8 +39,8 @@ namespace TIC_TAC_TOE
             this.box9 = new System.Windows.Forms.Button();
             this.box8 = new System.Windows.Forms.Button();
             this.box7 = new System.Windows.Forms.Button();
-            this.ResetBtn = new System.Windows.Forms.Button();
-            this.ExitBtn = new System.Windows.Forms.Button();
+            this.ResetBtn = new System.Windows.Forms.RadioButton();
+            this.ExitBtn = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // box1
@@ -136,21 +136,27 @@ namespace TIC_TAC_TOE
             // 
             // ResetBtn
             // 
-            this.ResetBtn.Location = new System.Drawing.Point(16, 367);
+            this.ResetBtn.AutoSize = true;
+            this.ResetBtn.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ResetBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ResetBtn.Location = new System.Drawing.Point(16, 369);
             this.ResetBtn.Name = "ResetBtn";
-            this.ResetBtn.Size = new System.Drawing.Size(75, 23);
-            this.ResetBtn.TabIndex = 9;
+            this.ResetBtn.Size = new System.Drawing.Size(53, 19);
+            this.ResetBtn.TabIndex = 11;
+            this.ResetBtn.TabStop = true;
             this.ResetBtn.Text = "Reset";
-            this.ResetBtn.UseVisualStyleBackColor = true;
+            this.ResetBtn.UseVisualStyleBackColor = false;
             this.ResetBtn.Click += new System.EventHandler(this.ResetBtn_Click);
             // 
             // ExitBtn
             // 
+            this.ExitBtn.AutoSize = true;
             this.ExitBtn.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ExitBtn.Location = new System.Drawing.Point(233, 367);
+            this.ExitBtn.Location = new System.Drawing.Point(292, 369);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(75, 23);
-            this.ExitBtn.TabIndex = 10;
+            this.ExitBtn.Size = new System.Drawing.Size(44, 19);
+            this.ExitBtn.TabIndex = 12;
+            this.ExitBtn.TabStop = true;
             this.ExitBtn.Text = "Exit";
             this.ExitBtn.UseVisualStyleBackColor = false;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
@@ -176,6 +182,7 @@ namespace TIC_TAC_TOE
             this.Name = "Form1";
             this.Text = "TIC TAC TOE";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -190,8 +197,8 @@ namespace TIC_TAC_TOE
         private System.Windows.Forms.Button box9;
         private System.Windows.Forms.Button box8;
         private System.Windows.Forms.Button box7;
-        private System.Windows.Forms.Button ResetBtn;
-        private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.RadioButton ResetBtn;
+        private System.Windows.Forms.RadioButton ExitBtn;
     }
 }
 

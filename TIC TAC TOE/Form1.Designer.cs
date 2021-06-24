@@ -52,7 +52,7 @@ namespace TIC_TAC_TOE
             this.box1.Size = new System.Drawing.Size(103, 98);
             this.box1.TabIndex = 0;
             this.box1.UseVisualStyleBackColor = false;
-            this.box1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box1_MouseUp);
+            this.box1.Click += new System.EventHandler(this.box_Click);
             // 
             // box2
             // 
@@ -62,7 +62,7 @@ namespace TIC_TAC_TOE
             this.box2.Size = new System.Drawing.Size(103, 98);
             this.box2.TabIndex = 1;
             this.box2.UseVisualStyleBackColor = true;
-            this.box2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box2_MouseUp);
+            this.box2.Click += new System.EventHandler(this.box_Click);
             // 
             // box3
             // 
@@ -72,7 +72,7 @@ namespace TIC_TAC_TOE
             this.box3.Size = new System.Drawing.Size(103, 98);
             this.box3.TabIndex = 2;
             this.box3.UseVisualStyleBackColor = true;
-            this.box3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box3_MouseUp);
+            this.box3.Click += new System.EventHandler(this.box_Click);
             // 
             // box6
             // 
@@ -82,7 +82,7 @@ namespace TIC_TAC_TOE
             this.box6.Size = new System.Drawing.Size(103, 98);
             this.box6.TabIndex = 5;
             this.box6.UseVisualStyleBackColor = true;
-            this.box6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box6_MouseUp);
+            this.box6.Click += new System.EventHandler(this.box_Click);
             // 
             // box5
             // 
@@ -92,7 +92,7 @@ namespace TIC_TAC_TOE
             this.box5.Size = new System.Drawing.Size(103, 98);
             this.box5.TabIndex = 4;
             this.box5.UseVisualStyleBackColor = true;
-            this.box5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box5_MouseUp);
+            this.box5.Click += new System.EventHandler(this.box_Click);
             // 
             // box4
             // 
@@ -102,7 +102,7 @@ namespace TIC_TAC_TOE
             this.box4.Size = new System.Drawing.Size(103, 98);
             this.box4.TabIndex = 3;
             this.box4.UseVisualStyleBackColor = true;
-            this.box4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box4_MouseUp);
+            this.box4.Click += new System.EventHandler(this.box_Click);
             // 
             // box9
             // 
@@ -112,7 +112,7 @@ namespace TIC_TAC_TOE
             this.box9.Size = new System.Drawing.Size(103, 98);
             this.box9.TabIndex = 8;
             this.box9.UseVisualStyleBackColor = true;
-            this.box9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box9_MouseUp);
+            this.box9.Click += new System.EventHandler(this.box_Click);
             // 
             // box8
             // 
@@ -122,7 +122,7 @@ namespace TIC_TAC_TOE
             this.box8.Size = new System.Drawing.Size(103, 98);
             this.box8.TabIndex = 7;
             this.box8.UseVisualStyleBackColor = true;
-            this.box8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box8_MouseUp);
+            this.box8.Click += new System.EventHandler(this.box_Click);
             // 
             // box7
             // 
@@ -132,7 +132,7 @@ namespace TIC_TAC_TOE
             this.box7.Size = new System.Drawing.Size(103, 98);
             this.box7.TabIndex = 6;
             this.box7.UseVisualStyleBackColor = true;
-            this.box7.MouseUp += new System.Windows.Forms.MouseEventHandler(this.box7_MouseUp);
+            this.box7.Click += new System.EventHandler(this.box_Click);
             // 
             // ResetBtn
             // 

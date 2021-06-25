@@ -151,7 +151,7 @@ namespace TIC_TAC_TOE
             // 
             this.ExitBtn.AutoCheck = false;
             this.ExitBtn.AutoSize = true;
-            this.ExitBtn.Location = new System.Drawing.Point(292, 360);
+            this.ExitBtn.Location = new System.Drawing.Point(279, 360);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(44, 19);
             this.ExitBtn.TabIndex = 17;

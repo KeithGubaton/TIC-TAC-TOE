@@ -10,7 +10,7 @@ namespace TIC_TAC_TOE
     {
         private bool next = true;
         private int next_c = 0;
-
+       
         public bool Next
         {
             get => next;

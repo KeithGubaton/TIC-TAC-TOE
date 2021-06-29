@@ -43,7 +43,8 @@ namespace TIC_TAC_TOE
             Application.Exit();
         }
 
-        public void hindi_ligwak()
+        // method for determining the winner
+        private void hindi_ligwak() 
         {
 
             bool hindi_ligwak = false;
@@ -90,7 +91,9 @@ namespace TIC_TAC_TOE
                     MessageBox.Show("Tabla");
             }
         }
-        public void disableBox()
+
+        //method for disabling box/button
+        private void disableBox()
         {
             try
             {

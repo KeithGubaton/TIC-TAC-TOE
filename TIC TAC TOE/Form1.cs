@@ -21,11 +21,16 @@ namespace TIC_TAC_TOE
         private void box_Click(object sender, EventArgs e)
         {
             Button box = (Button)sender;
-            if (game.Next)
-                box.Text = "X";
-            else
-                box.Text = "O";
+            box.BackColor = Color.Yellow;
 
+            if (game.Next)
+            { 
+                box.Text = "X";             
+            }
+            else
+            { 
+                box.Text = "O";              
+            }
             game.Next = !game.Next;
             box.Enabled = false;
             game.Next_c++;

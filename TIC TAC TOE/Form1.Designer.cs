@@ -221,9 +221,10 @@ namespace TIC_TAC_TOE
             this.Controls.Add(this.box3);
             this.Controls.Add(this.box2);
             this.Controls.Add(this.box1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.ShowIcon = false;
-            this.Text = "Reset";
+            this.Text = "Tic Tac Toe";
             this.ResumeLayout(false);
             this.PerformLayout();
 

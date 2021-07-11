@@ -51,7 +51,7 @@ namespace TIC_TAC_TOE
             this.box1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box1.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box1.ForeColor = System.Drawing.Color.Yellow;
-            this.box1.Location = new System.Drawing.Point(15, 16);
+            this.box1.Location = new System.Drawing.Point(15, 29);
             this.box1.Name = "box1";
             this.box1.Size = new System.Drawing.Size(103, 98);
             this.box1.TabIndex = 0;
@@ -66,7 +66,7 @@ namespace TIC_TAC_TOE
             this.box2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box2.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box2.ForeColor = System.Drawing.Color.Yellow;
-            this.box2.Location = new System.Drawing.Point(124, 16);
+            this.box2.Location = new System.Drawing.Point(124, 29);
             this.box2.Name = "box2";
             this.box2.Size = new System.Drawing.Size(103, 98);
             this.box2.TabIndex = 1;
@@ -81,7 +81,7 @@ namespace TIC_TAC_TOE
             this.box3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box3.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box3.ForeColor = System.Drawing.Color.Yellow;
-            this.box3.Location = new System.Drawing.Point(233, 16);
+            this.box3.Location = new System.Drawing.Point(233, 29);
             this.box3.Name = "box3";
             this.box3.Size = new System.Drawing.Size(103, 98);
             this.box3.TabIndex = 2;
@@ -96,7 +96,7 @@ namespace TIC_TAC_TOE
             this.box6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box6.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box6.ForeColor = System.Drawing.Color.Yellow;
-            this.box6.Location = new System.Drawing.Point(234, 120);
+            this.box6.Location = new System.Drawing.Point(234, 133);
             this.box6.Name = "box6";
             this.box6.Size = new System.Drawing.Size(103, 98);
             this.box6.TabIndex = 5;
@@ -111,7 +111,7 @@ namespace TIC_TAC_TOE
             this.box5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box5.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box5.ForeColor = System.Drawing.Color.Yellow;
-            this.box5.Location = new System.Drawing.Point(125, 120);
+            this.box5.Location = new System.Drawing.Point(125, 133);
             this.box5.Name = "box5";
             this.box5.Size = new System.Drawing.Size(103, 98);
             this.box5.TabIndex = 4;
@@ -126,7 +126,7 @@ namespace TIC_TAC_TOE
             this.box4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box4.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box4.ForeColor = System.Drawing.Color.Yellow;
-            this.box4.Location = new System.Drawing.Point(16, 120);
+            this.box4.Location = new System.Drawing.Point(16, 133);
             this.box4.Name = "box4";
             this.box4.Size = new System.Drawing.Size(103, 98);
             this.box4.TabIndex = 3;
@@ -141,7 +141,7 @@ namespace TIC_TAC_TOE
             this.box9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box9.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box9.ForeColor = System.Drawing.Color.Yellow;
-            this.box9.Location = new System.Drawing.Point(233, 224);
+            this.box9.Location = new System.Drawing.Point(233, 237);
             this.box9.Name = "box9";
             this.box9.Size = new System.Drawing.Size(103, 98);
             this.box9.TabIndex = 8;
@@ -156,7 +156,7 @@ namespace TIC_TAC_TOE
             this.box8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box8.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box8.ForeColor = System.Drawing.Color.Yellow;
-            this.box8.Location = new System.Drawing.Point(124, 224);
+            this.box8.Location = new System.Drawing.Point(124, 237);
             this.box8.Name = "box8";
             this.box8.Size = new System.Drawing.Size(103, 98);
             this.box8.TabIndex = 7;
@@ -171,7 +171,7 @@ namespace TIC_TAC_TOE
             this.box7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.box7.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.box7.ForeColor = System.Drawing.Color.Yellow;
-            this.box7.Location = new System.Drawing.Point(15, 224);
+            this.box7.Location = new System.Drawing.Point(15, 237);
             this.box7.Name = "box7";
             this.box7.Size = new System.Drawing.Size(103, 98);
             this.box7.TabIndex = 6;
@@ -221,9 +221,11 @@ namespace TIC_TAC_TOE
             this.Controls.Add(this.box3);
             this.Controls.Add(this.box2);
             this.Controls.Add(this.box1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.ShowIcon = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";
             this.ResumeLayout(false);
             this.PerformLayout();
